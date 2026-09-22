@@ -1,0 +1,40 @@
+[worldserver]
+
+########################################
+# mod-scroll-system configuration
+########################################
+#
+# Mage "Comprehension" scroll scribing: from ComprehensionLevel onward, a Mage
+# character can use `.scroll create <n>` to scribe one of a fixed set of
+# consumable "Scroll of X" items (see `.scroll list`) into their bags. Each
+# scroll casts an existing spell on use (a stat buff, a heal, a mana restore,
+# a conjure, or a teleport) and is consumed on use. The scrolls are also sold
+# by the "Arcane Scribe" vendor NPC to anyone, regardless of class or level.
+#
+
+#
+#    ScrollSystem.Enable
+#        Master on/off switch for this module. 0 = the module loads but does
+#        nothing (the vendor NPC, if spawned, still sells - only the
+#        `.scroll` command and the Comprehension announcement are gated).
+#        Default: 1
+#
+ScrollSystem.Enable = 1
+
+#
+#    ScrollSystem.ComprehensionLevel
+#        The character level at which a Mage gains Comprehension - the
+#        ability to scribe scrolls via `.scroll create <n>`. Purely a
+#        class+level gate; no spell is required or granted.
+#        Default: 20
+#
+ScrollSystem.ComprehensionLevel = 20
+
+#
+#    ScrollSystem.GoldCost
+#        Copper cost per scroll scribed via `.scroll create <n>`. 0 = free.
+#        Does not affect the vendor NPC's own prices (set per item in
+#        npc_vendor/item_template as usual).
+#        Default: 0
+#
+ScrollSystem.GoldCost = 0
