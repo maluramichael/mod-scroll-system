@@ -1,5 +1,10 @@
 # mod-scroll-system
 
+<!-- links:start -->
+[![Support me on Ko-fi](https://malura.de/assets/badge/kofi.svg)](https://malura.de/go/kofi?ref=mod-scroll-system)
+[![Check out my page](https://malura.de/assets/badge/malura.svg)](https://malura.de/go/site?ref=mod-scroll-system)
+<!-- links:end -->
+
 An [AzerothCore](https://www.azerothcore.org/) module (WotLK 3.3.5a) that adds a small
 set of consumable "Scroll of X" items and lets Mages scribe them themselves once they've
 mastered **Comprehension**.
